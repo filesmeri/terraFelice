@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terra felice-azienda agricola naturale-Fiesso D'Artico</title>
+    <meta name="description" content="Piccola azienda agricola a Fiesso d'artico.Produttori di frutta, verdura naturale e uova in modo biologico e salutare.">
+    <link rel="apple-touch-icon" sizes="76x76" href="resources/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="resources/favicon/favicon-16x16.png">
+    <link rel="mask-icon" href="resources/favicon/safari-pinned-tab.svg" color="#627659">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">    
+    <meta name="pinterest" content="nohover"></meta>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="resources/css/reset.css">
+    <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+    
+    <nav id="home" class= flex-container> 
+         <!-- The overlay -->
+        <div id="myNav" class="overlay">
+            <!-- Button to close the overlay navigation -->
+            <a href="#" class="closebtn" onclick="closeNav()">X</a>                                                
+            <!-- Overlay content -->
+            <div class="overlay-content">
+                <a href="#home" onclick="closeNav()">Home</a>
+                <a href="#chiSiamo" onclick="closeNav()">Chi siamo</a>
+                <a href="#coltivazione" onclick="closeNav()">Coltivazione</a>
+                <a href="#prodotti" onclick="closeNav()">Prodotti</a>
+                <a href="#contatti" onclick="closeNav()">Dove siamo</a>
+            </div>                                                
+        </div>
+
+        <div id="navbar">
+            <div class="logo">
+                <a href="#home"><img src="resources/illustrations/logo.png" alt="logo"></a> 
+            </div>
+            <div class="hamburger">
+                <a id="hamburger-menu" href="#" onclick="openNav()"><img src="resources/illustrations/hamburger-menu.png" alt="hamburger menu"></a> 
+            </div>
+            <div class="links">  
+                <a href="#home">Home</a>
+                <a href="#chiSiamo">Chi siamo</a>
+                <a href="#coltivazione">Coltivazione</a>
+                <a href="#prodotti">Prodotti</a>
+                <a href="#contatti">Dove siamo</a>
+            </div>
+        </div>
+    </nav>  
+
+
+    <header id="hero" class= flex-container>         
+        <div class="video-container">
+            <video preload="none" autoplay muted id="myVideo" poster="resources/illustrations/poster.jpg"  >
+                <source src="resources/video/rape.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>  
+        <div onmouseover="addAnimation(this)"  class="title-wrapper">
+            <h1 onmouseover="play()">TERRA FELICE</h1>
+            <h2  id="anim">Fiesso d'Artico</h2>
+            <h3>Verdura biologica a km 0</h2>
+        </div>        
+    </header>
+
+<!--Chi siamo-->
+    <section id="chiSiamo" class="flex-container mt-50">
+        <aside class="central-side"></aside>
+        <article class="central about-background">            
+            <h3 class="section-title">Verdura felice</h3>
+            <h4 class="section-subtitle">Terra felice, verdura felice, persone felici!</h4>
+            
+            <figure class="about-photo">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">                   
+                      <img src="resources/img/flavio-e-fiorella.jpg" alt="Fiorella e flavio nel loro orto">                 
+                    </div>
+                    <div class="mySlides fade">
+                        <img style="top:auto;bottom:0;" src="resources/img/piedi-nudi-in-orto.jpg" alt="A piedi nudi nel orto">
+                    </div>
+                  
+                    <div class="mySlides fade">         
+                      <img src="resources/img/mani-nella-terra-pianta.jpg" alt="Mani sporche di terra mentre si pianta una piantina piccola">           
+                    </div>
+                  
+                    <div class="mySlides fade">                
+                      <img src="resources/img/banco-di-verdura.jpg" alt="Un banco di verdura colorata mista">
+                    </div>                  
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  </div>
+                  <br>
+                  
+                  <!-- The dots/circles -->
+                  <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                  </div>
+                </div>
+            </figure>  
+            <p class="section-p">
+                Ciao! Siamo Fiorella e Flavio, moglie e marito, e tutti i giorni ci prendiamo cura del nostro
+                piccolo pezzettino di "terra felice".
+                Qui coltiviamo frutta e verdura nel modo più naturale possibile, senza prodotti chimici
+                e senza "sbrodeghi". Ci piace il nostro lavoro, ci piace vivere la terra "a piedi nudi" e soppratutto
+                ci piace quando venite a trovarci!</p>          
+        </article>
+        <aside class="central-side"></aside>
+    </section>
+
+    <!-- Separator line for smaller screens -->
+    <aside class="separator">
+        <img src="resources/illustrations/linea.png" alt="Saparator line">
+    </aside>
+
+<!-- Come coltiviamo -->
+    <section id="coltivazione" class="flex-container mt-50">
+        <aside class="central-side"></aside>
+        <article class="central coltivazione-background">
+            <h3 class="section-title">Come coltiviamo</h3>
+            <div id="outside-tab-row" class="image-tab-row">
+                <div class="image-tab" onclick="expandTab(this);">
+                    <a class="tabLink" href="#coltivazione"><img src="resources/illustrations/coltivazione-lombrico.png" alt="Hummus di lombrico"></a>
+                    <a class="tabLink" href="#coltivazione"><h4 class="coltivazione-tab-title">Hummus di lombrico</h4></a>
+                    <div class="underline-outside"><img src="resources/illustrations/linea.png" alt="illustrated underline"></div>
+                    <p class="coltivazione-description">Per concimare la terra usiamo il terriccio prodotto dai nosti piccoli amichetti vermi.</p>
+                </div>
+                <div class="image-tab" onclick="expandTab(this);">
+                    <a class="tabLink" href="#coltivazione"><img src="resources/illustrations/coltivazione-semi.png" alt="Varieta vecchie di semi"></a>
+                    <a class="tabLink" href="#coltivazione"><h4 class="coltivazione-tab-title">Semi di varieta vecchie</h4></a>
+                    <div class="underline-outside"><img src="resources/illustrations/linea.png" alt="illustrated underline"></div>
+                    <p class="coltivazione-description">Cerchiamo sempre di perservare la vecchie varieta di semi della nostra terra.</p>
+                </div>
+                <div class="image-tab" onclick="expandTab(this);">
+                    <a class="tabLink" href="#coltivazione"><img src="resources/illustrations/coltivazione-vangatura.png" alt="Suolo felice" ></a>
+                    <a class="tabLink" href="#coltivazione"><h4 class="coltivazione-tab-title">Niente vangatura</h4></a>
+                    <div class="underline-outside"><img src="resources/illustrations/linea.png" alt="illustrated underline"></div>
+                    <p class="coltivazione-description">Non vanghiamo la terra ma la ariegiamo per mantenere l'equilibrio del suolo.</p>
+                </div>
+                <div class="image-tab" onclick="expandTab(this);">
+                    <a class="tabLink" href="#coltivazione"><img src="resources/illustrations/coltivazione-naturale.png" alt="Lotta naturale"></a>
+                    <a class="tabLink" href="#coltivazione"><h4 class="coltivazione-tab-title">Lotta naturale</h4></a>
+                    <div class="underline-outside"><img src="resources/illustrations/linea.png" alt="illustrated underline"></div>
+                    <p class="coltivazione-description">Non usiamo mai prodotti chimici, ma una lotta naturale contro i parasiti.</p>
+                </div>
+            </div>
+            <div id="tab-tip"><p>Clicca sullle icone per scoprire i modi in cui coltiviamo la nostra verdura naturale.</p></div>
+            <div id="expanded-container" class="expanded-image-container">
+                <!-- Close the image -->
+                <a id="expanded-close-button" href="#coltivazione" onclick="closeExpanded()"  class="closebtn">&times;</a>
+                <div id="inside-tab-row" class="image-tab-row">
+                    <div class="image-tab" onclick="expandTab(this);">
+                        <img src="resources/illustrations/coltivazione-lombrico.png" alt="Hummus di lombrico">
+                        <h4 class="coltivazione-tab-title">Hummus di lombrico</h4>
+                        <div class="underline"></div>
+                        <p class="coltivazione-description">Per concimare la terra usiamo il terriccio prodotto dai nosti piccoli amichetti vermi.</p>
+                    </div>
+                    <div class="image-tab" onclick="expandTab(this);">
+                        <img src="resources/illustrations/coltivazione-semi.png" alt="Varieta vecchie">
+                        <h4 class="coltivazione-tab-title">Semi di varieta vecchie</h4>
+                        <div class="underline"></div>
+                        <p class="coltivazione-description">Cerchiamo sempre di perservare la vecchie varieta di semi della nostra terra.</p>
+                    </div>
+                    <div class="image-tab" onclick="expandTab(this);">
+                        <img src="resources/illustrations/coltivazione-vangatura.png" alt="Suolo felice" >
+                        <h4 class="coltivazione-tab-title">Niente vangatura</h4>
+                        <div class="underline"></div>
+                        <p class="coltivazione-description">Non vanghiamo la terra ma la ariegiamo per mantenere l'equilibrio del suolo.</p>
+                    </div>
+                    <div class="image-tab" onclick="expandTab(this);">
+                        <img src="resources/illustrations/coltivazione-naturale.png" alt="Lotta naturale">
+                        <h4 class="coltivazione-tab-title">Non usiamo prodotti chimici</h4>
+                        <div class="underline"></div>
+                        <p class="coltivazione-description">Non usiamo mai prodotti chimici, ma una lotta naturale contro i parasiti.</p>
+                    </div>
+                </div>                
+                <!-- Expanded tab -->
+                <img id="expandedImg">              
+                <!-- Expanded tab title and text -->
+                <h4 id="imgtext"></h4>
+                <p id="imgdesc"></p>
+              </div>
+        </article>
+        <aside class="central-side"></aside>
+    </section>
+
+    <!-- Separator line for smaller screens -->
+    <aside class="separator">
+        <img src="resources/illustrations/linea.png" alt="Separator line">
+    </aside>
+
+    <!--Prodotti-->
+    <section id="prodotti" class="flex-container mt-50">
+        <aside class="central-side"></aside>
+        <article class="central product-background">            
+            <h3 class="section-title">Prodotti di stagione, 100% naturali.</h3>            
+            <figure class="about-photo">
+                <div class="product-slideshow-container">
+                    <div class="myProducts fade">                      
+                      <div class="product-image-wrapper">
+                        <img src="resources/img/prodotti-verdure.jpg" alt="Verdure di vario tipo">
+                      </div>
+                      <div class="product-desc-wrapper">
+                        <h4 class="product-title">Verdura di stagione</h4>
+                        <p class="product-desc-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Recusandae nostrum laborum, quod, incidunt, labore dicta non cupiditate corrupti 
+                            nemo placeat commodi in vel consequatur. Repellat cumque libero inventore deleniti 
+                            nemo.</p>
+                      </div>                      
+                    </div>
+                    <div class="myProducts fade">                        
+                        <div class="product-image-wrapper">
+                          <img src="resources/img/prodotti-uova.jpg" alt="Uova in cartone sopra un tavolo">
+                        </div>
+                        <div class="product-desc-wrapper">
+                          <h4 class="product-title">Uova di galline felici</h4>
+                          <p class="product-desc-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Recusandae nostrum laborum, quod, incidunt, labore dicta non cupiditate corrupti 
+                            nemo placeat commodi in vel consequatur. Repellat cumque libero inventore deleniti 
+                            nemo.</p>
+                        </div>                        
+                    </div>
+                  
+                    <div class="myProducts fade">                        
+                        <div class="product-image-wrapper">
+                          <img src="resources/img/prodotti-frutta.jpg" alt="Frutta sul ramo del albero">
+                        </div>
+                        <div class="product-desc-wrapper">
+                          <h4 class="product-title">Frutta</h4>
+                          <p class="product-desc-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Recusandae nostrum laborum, quod, incidunt, labore dicta non cupiditate corrupti 
+                            nemo placeat commodi in vel consequatur. Repellat cumque libero inventore deleniti 
+                            nemo.</p>
+                        </div>                        
+                    </div>
+                  
+                    <div class="myProducts fade">                        
+                        <div class="product-image-wrapper">
+                          <img src="resources/img/prodotti-confetture.jpg" alt="Fette di pane con confettura spalmata">
+                        </div>
+                        <div class="product-desc-wrapper">
+                          <h4 class="product-title">Confetture naturali</h4>
+                          <p class="product-desc-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Recusandae nostrum laborum, quod, incidunt, labore dicta non cupiditate corrupti 
+                            nemo placeat commodi in vel consequatur. Repellat cumque libero inventore deleniti 
+                            nemo.</p>
+                        </div>                        
+                    </div>
+                  </div>
+                  <br>                
+                </div>
+            </figure> 
+            <!-- The dots/circles --> 
+            <div class="product-dots-wrapper">
+                <span class="productDot" onclick="currentProduct(0)"><img src="resources/illustrations/icona-verdura.png" alt="icona verdura"></span>
+                <span class="productDot" onclick="currentProduct(1)"><img src="resources/illustrations/icona-uovo.png" alt="icona uovo"></span>
+                <span class="productDot" onclick="currentProduct(2)"><img src="resources/illustrations/icona-frutta.png" alt="icona frutta"></span>
+                <span class="productDot" onclick="currentProduct(3)"><img src="resources/illustrations/icona-confettura.png" alt="icona confetture"></span>
+              </div>         
+        </article>
+        <aside class="central-side"></aside>
+    </section>
+
+    <!-- Separator line for smaller screens -->
+    <aside class="separator">
+        <img src="resources/illustrations/linea.png" alt="separator line">
+    </aside>
+
+    <section id="contatti" class="flex-container mt-50">
+        <aside class="central-side">
+            
+        </aside>
+        <article class="central contatti-background"> 
+            <h3 class="section-title">Visita la "Terra felice"</h3> 
+            <div id="forecast-section">
+                <div class="forecast-col">
+                    <img src="resources/illustrations/illustrazione-casa-contatti.png" alt="Illustrazione di una casetta con vedure e foglie">
+                </div>
+                <div class="forecast-col">
+                    <div id="forecast-button-wrapper">
+                        <h3> Noi ti aspettiamo!</h3>                        
+                        <p>Scopri che tempo fa da noi.</p>
+                        <p>Freddo o caldo, noi probabilmente siamo in orto.</p>
+                        <p>Vieni a trovarci!</p>
+                        <button class="forecast-button" href="#contatti" onclick="getWeather()">Il tempo oggi</button>
+                    </div>
+
+                    <div id="forecast-container">
+                        <!-- <a id="forecast-close-button" href="contatti" onclick="closeWeather(showWeatherButton)"  class="forecast-closebtn">&times;</a>
+                        
+                        <div class="forecast-body">
+                            <div>
+                                <img  id="forecast-icon" src="resources/weatherIcons/01d@2x.png">
+                            </div>
+                            <div>
+                                <h3 id="temperature">13&deg;C</h3>  
+                                <h3>Cielo sereno</h3>                        
+                            </div>
+                            <div>
+                                <h2>Fiesso d'Artico</h2>
+                                <h4>Martedi, 02 Marzo, 12:09</h3>
+                            </div>                            
+                        </div> -->
+                    </div> 
+                </div> 
+            </div>
+            
+            
+            <div class="contact-map">
+                <div id="map-wrapper">
+                    <a href="https://www.google.com/maps/search/Via+Garzare,+21,+30032+Fiesso+D'artico+V/@45.4257838,12.0499328,17z/data=!3m1!4b1" target="_blank">
+                        <img src="resources/illustrations/contatti-cartina.png" alt="cartina illustrata">
+                    </a>
+                </div> 
+                <div id="contacts-wrapper">
+                    <div class="contact-segment">
+                        <h2 class="contact-segment-title">Vieni a trovarci</h2>
+                        <h3>Via Garzare 20, 30032</h3>
+                        <h3>Fiesso d'Artico (VE) Italia</h3>
+                    </div>
+                    <div class="contact-segment">
+                        <h2 class="contact-segment-title">Contattaci</h2>
+                        <h3>+39 335 987 46787</h3>
+                        <h3>info@terrafelice.it</h3>
+                    </div>
+                    <div class="contact-segment">
+                        <h2 class="contact-segment-title">Trovaci sui social</h2>
+                        <div id="social-wrapper">
+                           <img src="resources/socialIcons/facebook.png" alt="facebook icon">
+                           <img src="resources/socialIcons/instagram.png" alt="instagram icon">
+                           <img src="resources/socialIcons/pinterest.png" alt="pinterest icon">
+                        </div>
+                    </div>
+                </div>                  
+            </div>
+      
+        </article>
+        <aside class="central-side">
+            
+        </aside>
+    </section>
+
+    <footer class="footer mt-50">
+        <aside class="footer-side">
+            <img class="leaf leaf-left" src="resources/illustrations/footer-leafs-illustration.png" alt="Illustrazione di foglie">
+        </aside>
+        <div class="footer-central">
+            <div id="footer-navbar">
+                <img src="resources/illustrations/linea.png" alt="separator line">
+                <a href="#home">Home</a>
+                <a href="#chiSiamo">Chi siamo</a>
+                <a href="#coltivazione">Coltivazione</a>
+                <a href="#prodotti">Prodotti</a>
+                <a href="#contatti">Contatti</a>
+                <img src="resources/illustrations/linea.png" alt="separator line">
+            </div>
+            <div id="legal-data">
+                <p>P-IVA: 374384 484823 84283</p>
+                <p>&#169; COPYRIGHT 2021</p>
+                <p>Designed by: Meri Files</p>               
+            </div>
+            <div id="policy">
+                <a href=""><p>COOKIE POLICY</p></a>
+                <a href=""><p>PRIVACY POLICY</p></a>
+            </div>
+
+            
+        </div>
+        <aside class="footer-side">
+            <img class="leaf leaf-right" src="resources/illustrations/footer-leafs-illustration.png" alt="Illustrazione di foglie">
+        </aside>
+
+
+    </footer>
+
+
+<!-- Main js script -->
+<script src="resources/js/main.js"></script>
+
+<!-- Open weather script -->
+<script src="resources/js/openWeather.js"></script>
+    
+</body>
+</html>
