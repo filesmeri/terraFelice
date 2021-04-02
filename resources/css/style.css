@@ -1075,8 +1075,7 @@ body {
 }
 
 .forecast-button {
-    height: 40px;
-    width:200px;
+    padding: 10px 20px;
     background-color: #D6E7E4;
     border: solid 1px goldenrod;
     border-radius: 5px;
