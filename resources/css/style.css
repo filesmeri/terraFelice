@@ -1,6 +1,6 @@
 html{
     scroll-behavior: smooth;
-/*     font-size: 20px; */
+    font-size: 20px;
 }
 
 @media only screen and (min-width:1900px){
@@ -8,11 +8,11 @@ html{
         font-size:24px;
     }
 }
-/* @media only screen and (max-width:1024px){
+@media only screen and (max-width:1024px){
     html{
         font-size:16px;
     }
-} */
+}
 
 body {
     font-family: 'Londrina Solid', sans-serif;
@@ -754,6 +754,7 @@ body {
 
 .coltivazione-description{
     display: none;
+    width: 80%;
 }
 
 #tab-tip {
@@ -828,7 +829,8 @@ body {
 
   #imgdesc {
     text-align: center;
-    width: 100%;
+    width: 90%;
+    line-height: 1.7rem;
     
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 3rem;
@@ -1224,12 +1226,54 @@ body {
     margin-bottom: 7%;
 }
 
+.map-cta {
+    margin-top: 5%;
+    position: relative;
+    display: flex;
+    width: 90%;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    border-bottom: solid 2px  goldenrod;   
+}
+.map-cta::before{
+    content: '';
+    position: absolute;
+    bottom:0%;
+    left: 50%;
+    width: 3vw;
+    height:3vw;
+    background-color: #D6E7E4;    
+    border: solid goldenrod;
+    border-width: 0 3px 3px 0;
+    outline: solid #D6E7E4;
+    outline-width: 2vw;
+    display: inline-block;
+    padding: 3px; 
+    transform:translateY(50%) translateX(-50%) rotate(45deg);
+    -webkit-transform:translateY(50%) translateX(-50%)  rotate(45deg) ;
+}
+
+.map-cta h3{
+    text-align: center;
+    color: goldenrod;
+    font-size: 2rem;
+}
+
+.map-cta p{
+    margin: 3% 0 0;
+    text-align: center;
+    font-family: 'Montserrat',sans-serif;
+    z-index: 20;
+}
+
 .contact-map{
     margin: 0 0 5% 0;
     display: flex;
     flex-flow: row wrap;
     width: 90%;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 #map-wrapper{
@@ -1353,6 +1397,9 @@ body {
     }    
 }
 @media only screen and (max-width:700px) {
+    .map-cta p{
+        margin:5% 0;
+    }
     .contact-map {
         margin-bottom: 0;
         margin-top:5%;
@@ -1512,9 +1559,3 @@ body {
         box-shadow: none;
     }
 }
-
-
-
-
-
-
